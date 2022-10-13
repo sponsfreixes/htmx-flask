@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from flask import Flask
 
-from flask_htmx.request import HtmxAwareRequest
+from flask_htmx.requests import HtmxAwareRequest
 
 
 class Htmx:
