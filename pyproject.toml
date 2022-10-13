@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "flask>=2.0.0"
+    "flask>=2.1.0"
 ]
 
 [project.optional-dependencies]
