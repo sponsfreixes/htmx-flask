@@ -4,9 +4,9 @@ from typing import cast
 
 from flask import request
 
-from flask_htmx.extension import Htmx
-from flask_htmx.requests import HtmxAwareRequest
-from flask_htmx.response import make_response
+from htmx_flask.extension import Htmx
+from htmx_flask.requests import HtmxAwareRequest
+from htmx_flask.response import make_response
 
 # This is needed for IDEs and mypy to recognize the new request.htmx attribute
 request = cast(HtmxAwareRequest, request)

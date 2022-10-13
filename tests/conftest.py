@@ -2,7 +2,7 @@ import flask
 import pytest
 from flask import make_response as flask_make_response
 
-from flask_htmx import Htmx, make_response, request
+from htmx_flask import Htmx, make_response, request
 
 
 @pytest.fixture(scope="session")

@@ -5,7 +5,7 @@ from functools import cached_property
 
 from flask import Request
 
-from flask_htmx.constants import HX_FALSE, HX_TRUE
+from htmx_flask.constants import HX_FALSE, HX_TRUE
 
 if typing.TYPE_CHECKING:
     from werkzeug.datastructures import Headers

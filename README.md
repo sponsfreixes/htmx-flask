@@ -1,12 +1,12 @@
-# Flask-htmx
+# htmx-Flask
 
-Flask-htmx is an extension for Flask that adds support for [htmx](https://htmx.org) to 
+htmx-Flask is an extension for Flask that adds support for [htmx](https://htmx.org) to 
 your application.  It simplifies using htmx with Flask by enhancing the global `request` 
 object and providing a new `make_response` function.
 
 ## Install
 
-It's just `pip install flask-htmx` and you're all set. It's a pure Python package that
+It's just `pip install htmx-flask` and you're all set. It's a pure Python package that
 only needs [`flask`](https://flask.palletsprojects.com) (for obvious reasons!).
 
 ## Usage
@@ -17,7 +17,7 @@ Before using the enhanced `request`, you need to initialize the extension with:
 
 ```python
 from flask import Flask
-from flask_htmx import Htmx
+from htmx_flask import Htmx
 
 htmx = Htmx()
 
@@ -25,7 +25,7 @@ app = Flask(__name__)
 htmx.init_app(app)
 ```
 
-After that, you can use `flask_htmx.request.htmx` to easily access
+After that, you can use `htmx_flask.request.htmx` to easily access
 [htmx request headers](https://htmx.org/reference/#request_headers). For example,
 instead of:
 
@@ -50,7 +50,7 @@ def hello_workd():
 You can do:
 
 ```python
-from flask_htmx import request
+from htmx_flask import request
 from my_app import app
 
 @app.route("/")
@@ -71,7 +71,7 @@ def hello_workd():
 
 You might be interested on adding
 [htmx response headers](https://htmx.org/reference/#response_headers) to your response.
-Use `flask_htmx.make_response` for that. For example, instead of:
+Use `htmx_flask.make_response` for that. For example, instead of:
 
 ```python
 import json
@@ -91,7 +91,7 @@ def hola_mundo():
 You can do:
 
 ```python
-from flask_htmx import make_response
+from htmx_flask import make_response
 from my_app import app
 
 @app.route("/hola-mundo")
@@ -106,14 +106,14 @@ def hola_mundo():
 
 # IntelliSense
 
-By using Flask-htmx you will also get the benefits of code completion, parameter info
+By using htmx-Flask you will also get the benefits of code completion, parameter info
 and quick info on your IDE. Check out these screenshots from PyCharm:
 
-![request.htmx autocomplete](https://raw.githubusercontent.com/sponsfreixes/flask-htmx/main/docs/images/request_htmx_code_completion.png)
+![request.htmx autocomplete](https://raw.githubusercontent.com/sponsfreixes/htmx-flask/main/docs/images/request_htmx_code_completion.png)
 
-![make_response quick info](https://raw.githubusercontent.com/sponsfreixes/flask-htmx/main/docs/images/make_response_quick_info.png)
+![make_response quick info](https://raw.githubusercontent.com/sponsfreixes/htmx-flask/main/docs/images/make_response_quick_info.png)
 
-![make_response parameter info](https://raw.githubusercontent.com/sponsfreixes/flask-htmx/main/docs/images/make_response_parameter_info.png)
+![make_response parameter info](https://raw.githubusercontent.com/sponsfreixes/htmx-flask/main/docs/images/make_response_parameter_info.png)
 
 ## How to contribute
 

@@ -6,7 +6,7 @@ import typing
 from flask import Response
 from flask import make_response as flask_make_response
 
-from flask_htmx.constants import HX_FALSE, HX_TRUE, RESWAPS
+from htmx_flask.constants import HX_FALSE, HX_TRUE, RESWAPS
 
 
 def _stringify(val):

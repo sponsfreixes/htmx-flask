@@ -2,7 +2,7 @@ import urllib
 
 import pytest
 
-from flask_htmx import make_response
+from htmx_flask import make_response
 
 
 class TestResponse:

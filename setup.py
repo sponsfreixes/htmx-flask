@@ -6,7 +6,7 @@ from setuptools import setup
 # To be removed once GitHub catches up.
 
 setup(
-    name="flask-htmx",
+    name="htmx-flask",
     install_requires=[
         "flask",
     ],
