@@ -109,11 +109,11 @@ def hola_mundo():
 By using Flask-htmx you will also get the benefits of code completion, parameter info
 and quick info on your IDE. Check out these screenshots from PyCharm:
 
-![request.htmx autocomplete](/docs/images/request_htmx_code_completion.png)
+![request.htmx autocomplete](https://raw.githubusercontent.com/sponsfreixes/flask-htmx/main/docs/images/request_htmx_code_completion.png)
 
-![make_response quick info](/docs/images/make_response_quick_info.png)
+![make_response quick info](https://raw.githubusercontent.com/sponsfreixes/flask-htmx/main/docs/images/make_response_quick_info.png)
 
-![make_response parameter info](/docs/images/make_response_parameter_info.png)
+![make_response parameter info](https://raw.githubusercontent.com/sponsfreixes/flask-htmx/main/docs/images/make_response_parameter_info.png)
 
 ## How to contribute
 
