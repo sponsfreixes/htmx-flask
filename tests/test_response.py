@@ -113,8 +113,7 @@ class TestResponse:
                                 "message": "Here Is A Message",
                             }
                         },
-                        '{"showMessage": \
-                        {"level": "info", "message": "Here Is A Message"}}',
+                        '{"showMessage": {"level": "info", "message": "Here Is A Message"}}',  # noqa
                     ),
                     "HX-Trigger-After-Swap": (
                         {"event1": "A message", "event2": "Another message"},
