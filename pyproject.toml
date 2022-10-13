@@ -30,12 +30,10 @@ dependencies = [
     "flask>=2.0.0"
 ]
 
-[project.optional-dev]
-tests = [
+[project.optional-dependencies]
+dev = [
     'pre-commit',
 ]
-
-[project.optional-dependencies]
 tests = [
     'pytest',
 ]
