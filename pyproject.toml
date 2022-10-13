@@ -5,8 +5,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
+dynamic = ["version"]
 name = "flask-htmx"
-version = "0.1.0"
 description = "htmx support for Flask"
 authors = [{ name = "Sergi Pons Freixes", email = "sergi@cub3.net" }]
 requires-python = ">=3.7"
@@ -30,15 +30,6 @@ dependencies = [
     "flask>=2.0.0"
 ]
 
-[project.urls]
-"Source Code" = "https://github.com/sponsfreixes/flask-htmx"
-"Issue Tracker" = "https://github.com/sponsfreixes/flask-htmx/issues"
-"Changes" = "https://github.com/sponsfreixes/flask-htmx/blob/main/CHANGELOG.md"
-
-dependencies = [
-  'flask>=2.0.0',
-]
-
 [project.optional-dev]
 tests = [
     'pre-commit',
@@ -46,8 +37,16 @@ tests = [
 
 [project.optional-dependencies]
 tests = [
-  'pytest',
+    'pytest',
 ]
+
+[project.urls]
+"Source Code" = "https://github.com/sponsfreixes/flask-htmx"
+"Issue Tracker" = "https://github.com/sponsfreixes/flask-htmx/issues"
+"Changes" = "https://github.com/sponsfreixes/flask-htmx/blob/main/CHANGELOG.md"
+
+[tool.hatch.version]
+path = "src/flask_htmx/__init__.py"
 
 [tool.isort]
 multi_line_output = 3
